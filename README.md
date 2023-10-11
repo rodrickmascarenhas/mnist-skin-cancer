@@ -92,7 +92,7 @@ Optimal learning rate is 0.001.
 model = tuner.hypermodel.build(best_hps)
 history = model.fit(x_train, y_train, epochs=15, validation_data=(x_test,y_test), validation_split=0.2)
 val_loss_per_epoch = history.history['val_loss']
-best_epoch = val_acc_per_epoch.index(min(val_loss_per_epoch)) + 1
+best_epoch = val_loss_per_epoch.index(min(val_loss_per_epoch)) + 1
 print("Best epoch:%d"%(best_epoch,))
 ```
 
