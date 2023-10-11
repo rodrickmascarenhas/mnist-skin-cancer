@@ -1,4 +1,4 @@
-## MNIST Skin Classification From Keras Datasets
+## Skin Cancer Classification
 
 The data was imported from Keras ML repository: https://keras.io/api/datasets/mnist/
 
